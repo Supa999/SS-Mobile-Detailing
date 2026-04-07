@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk} from "next/font/google";
 import "./globals.css";
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 
 const spaceGrotesk = Space_Grotesk({
@@ -27,6 +28,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-black overflow-x-hidden scroll-smooth">
         <Header />
         {children}
+        <Footer />
         </body>
     </html>
   );

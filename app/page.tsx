@@ -3,6 +3,7 @@ import Hero from './components/landingPage/Hero'
 import Packages from './components/landingPage/Packages'
 import About from './components/landingPage/About'
 import Testimonials from './components/landingPage/Testimonials'
+import CTASection from './components/landingPage/CTASection'
 
 export default function LandingPage() {
   return (
@@ -11,6 +12,7 @@ export default function LandingPage() {
       <Packages />
       <About />
       <Testimonials />
+      <CTASection />
     </div>
   )
 }
