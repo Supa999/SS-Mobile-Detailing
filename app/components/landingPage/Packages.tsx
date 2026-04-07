@@ -20,7 +20,10 @@ const packages: PackagesType[] = [
 function renderPackages() {
   return packages.map((packageItem) => {
     return (
-      <div key={packageItem.title} className='w-full bg-card-color flex flex-col items-start p-8 justify-center gap-5 rounded-lg'>
+      <div key={packageItem.title} className={`w-full ${packageItem.isMostPopular? 'ring-2 ring-primary-color/10 bg-radial-[at_top_right] from-red-400/20 to-card-color to-45% shadow-[0_0_20px_5px_#FF000044]': 'bg-card-color'} flex flex-col items-start p-8 justify-center gap-5 rounded-lg`}>
+        {packageItem.isMostPopular? (
+          <div className='bg-primary-color/80 text-white px-3 rounded-sm font-black tracking-widest'>Most Popular</div>
+        ): null}
         <h2 className='text-white font-bold text-3xl tracking-[-2px]'>{packageItem.title}</h2>
         <p className='text-white/70'>{packageItem.desc}</p>
         <div className='space-y-3'>
@@ -35,7 +38,11 @@ function renderPackages() {
         </div>
         <div className='flex items-center justify-between w-full text-primary-color mt-5'>
           <p className='text-3xl font-bold tracking-widest'>${packageItem.price}+</p>
-          <Link href='' className='tracking-widest font-thin'>Details &gt;</Link>
+          {packageItem.isMostPopular? (
+            <Link href='' className="bg-primary-color text-white rounded-md p-2 font-black tracking-widest text-lg">Book Package</Link>
+          ): (
+            <Link href='' className="tracking-widest font-thin">Details &gt;</Link>
+          )}
         </div>
       </div>
     )
@@ -44,7 +51,7 @@ function renderPackages() {
 
 export default function Packages() {
   return (
-    <section className='min-h-screen bg-bg-color pt-20 px-8 space-y-16'>
+    <section className='min-h-screen bg-bg-color py-20 px-8 space-y-16'>
       <div className="space-y-2">
         <TextAnimate animation='slideRight' as='p' className="text-primary-color font-thin text-xl tracking-widest">
           The Lab
