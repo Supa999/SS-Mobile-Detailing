@@ -53,10 +53,10 @@ export default function Packages() {
   return (
     <section className='min-h-screen bg-bg-color py-20 px-8 space-y-16'>
       <div className="space-y-2">
-        <TextAnimate animation='slideRight' as='p' className="text-primary-color font-thin text-xl tracking-widest">
+        <TextAnimate animation='slideRight' as='p' duration={0.8} className="text-primary-color font-thin text-lg tracking-widest uppercase">
           The Lab
         </TextAnimate>
-        <TextAnimate animation='slideRight' as='h2' className="text-5xl text-white font-extrabold tracking-tight">
+        <TextAnimate animation='slideRight' as='h2'duration={0.8}  className="text-5xl text-white font-extrabold tracking-tighter">
           Packages
         </TextAnimate>
       </div>

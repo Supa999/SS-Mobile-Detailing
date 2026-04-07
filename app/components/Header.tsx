@@ -8,7 +8,7 @@ export default function Header() {
         <TextAnimate
           animation="slideRight"
           as="h1"
-          className="text-white text-shadow-2xs text-shadow-primary-color text-4xl flex-1/2 font-bold"
+          className="text-white text-shadow-2xs text-shadow-primary-color text-3xl flex-1/2 font-bold uppercase"
         >
           SS Mobile Detailing
         </TextAnimate>
