@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="bg-[url('/hero-background.webp')] bg-cover bg-center h-screen bg-white">
       <section className="flex flex-col items-center justify-center gap-10 h-full bg-linear-to-r from-black/90 from-20% to-black/50 px-8">
         <section className="flex flex-col items-start gap-3 justify-center w-full">
-          <div className="space-y-5">
+          <div className="space-y-2">
             <TextAnimate
               animation="slideRight"
               as="p"
@@ -22,7 +22,7 @@ export default function Hero() {
               className="text-white text-6xl w-3/4 leading-15 font-medium tracking-tighter "
               duration={0.8}
             >
-              Precision Details. Purpose Driven.
+              Precise Details. Purpose Driven.
             </TextAnimate>
             <TextAnimate
               animation="slideRight"

@@ -16,6 +16,8 @@
   --color-primary-color: #FF0000;
   --color-secondary-color: #c35160;
   --color-neutral-color: #0A0A0A;
+  --color-bg-color: #101010;
+  --color-card-color: #171717;
   --font-heading: var(--font-sans);
   --font-sans: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
