@@ -19,7 +19,7 @@ export default function Footer() {
         <a href='https://www.instagram.com/_ss_auto_detailing_/' target='_blank' rel='noopener noreferrer'>
           <InstagramSVG className="size-12 text-primary-color" />
         </a>
-        <a href='https://www.facebook.com/profile.php?id=61561737745249' rel='noopener noreferrer'>
+        <a href='https://www.facebook.com/profile.php?id=61561737745249' target='_blank' rel='noopener noreferrer'>
           <FacebookSVG className="size-12 text-primary-color" />
         </a>
       </div>
